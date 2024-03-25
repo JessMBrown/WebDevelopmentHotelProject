@@ -6,6 +6,11 @@ h1 {
     color: green;
 }
 
+.logo-image {
+    position: absolute;
+    left: 30px;
+}}
+
 img {
     height: 450px;
     width: 1600px; 
