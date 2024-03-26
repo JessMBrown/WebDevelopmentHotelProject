@@ -1,17 +1,26 @@
-body {
+ body {
     text-align: center;
 }
 
-h1 {
+/* h1 {
     color: green;
-}
+}  */
+
 
 .logo-image {
-    position: absolute;
-    left: 30px;
-}}
+        z-index: 1;
+        position: relative;
+    } 
 
-img {
+.scroll-image-box {
+    z-index: 2;
+    position:relative;
+    
+}
+
+
+
+.scrolling-images {
     height: 450px;
     width: 1600px; 
     position: absolute;
@@ -19,4 +28,5 @@ img {
     margin-left: -50px;
     top: 10%;
     margin-top: -50px;
+
 }
