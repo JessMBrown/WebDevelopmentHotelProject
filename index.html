@@ -3,16 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Expo Lounge Hotel & Spa</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" >
+         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'>
+
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+         
+
 </head>
 <body>
+    <nav>
+        <div class="navbar--container sticky">
+            <div class="navbar--title"><h4>navigation</h4></div>
+            <div class="navbar--icon"><i class="fas fa-bars"></i></div>
+        </div>
+          <div class="nav--open close sticky">
+            <div class="nav--open-icon"><i class="fas fa-times"></i></div>
+            <div class="nav--open-title">explore</div>
+            <div class="nav--open-menu">
+              <a href="">Rooms</a>
+              <a href="">Performances</a>
+              <a href="">Spa</a>
+              <a href="">Restaurant</a>
+              <a href="">Get in Touch</a>
+            </div>
+          </div>
+          <!-- Add a picture that cuts from right to left and meets the navbar to completely fill the screen -->
+    </nav>
+
+    <div class="booknow--container sticky">
+        <div class="booknow--title"><h4>Book now</h4></div>
+        <div class="booknow--icon"><i class="bfas bfa-bars"></i></div>
+    </div>
+      <div class="booknow--open close sticky">
+        <div class="booknow--open-icon"><i class="bfas bfa-times"></i></div>
+        <div class="booknow--open-title">What would you like to book</div>
+        <div class="booknow--open-menu">
+          <a href="">Room type 1</a>
+          <a href="">Room type 2</a>
+          <a href="">Room type 3</a>
+          <a href="">Room type 4</a>
+          <a href="">Room type 5</a>
+        </div>
+      </div>
 
 <div id="logo">
     <img src="/pictures/hotellogo.png" class="logo-image"/>
-    <p>Text here</p>
 </div>
 
     <div id="scroll-image" class="scroll-image-box">
@@ -21,6 +65,145 @@
         <img src="/pictures/restauranttopcarousel.jpg" class="scrolling-images" />
         <img src="/pictures/thehotel.jpg" class="scrolling-images" />
     </div>
+
+
+    <h1> Welcome </h1>
+
+    <h2>to the Expo Lounge Hotel home to music</h2>
+
+    <h3>We are the Expo Lounge founded in 2024 by the group project 9.
+        The home to music, where the greatest artists of today come together and bring you the very latest music.
+        Come to one of many music performances every week in the performance lounge, 
+        while your hear check out our luxury spa where you can be pampered and spoiled.
+        Feeling peckish? dont forget to stop by our 5 star michellin restaurant and bar boasting some of the most unique cocktails on offer in the UK.
+        Theres so much to do while here at the Expo Lounge hotel why not make it a holiday and stay with us in one of Artist designed premium star rooms or one of luxury rooms available.
+        We also cater for weddings and functions please get in touch <here> to request a tour.</h3>
+
+    <h4>Our Premium Star rooms Designed by the Stars</h4>
+
+    <h5> R1 Designed by Panic at the disco 'A boroque meets Rock and Pop'</h5>
+
+    <h6> R2 Designed by Coldplay 'Alternative rock pop vibes'</h6>
+
+    <h7> R3 Designed by 5 Seconds of Summer 'Alternative meets indie '</h7>
+
+    <h8> R4 Designed by The Weekend 'Electronic dance fusion'</h8>
+
+    <h9>R5 Designed by Daft Punk 'French house meets robots'</h9> 
+
+    <h10> R6 Designed by Imagine Dragons 'Pop Rock Dragons'</h10>
+
+    <h11>R7 Designed by Calvin Harris 'Pop with a splash of electronic love'</h11>
+
+    <h12> R8 Designed by Twenty One Pilots 'Indietronica meets Hiphop'</h12>
+
+    <h13>R9 Designed by Linkin Park 'Fused with Alternative Rock'</h13>
+
+    <h14>R10 Designed by Tenacious D 'All Hard Rock with plenty of Comedy'</h14>
+
+    <h15>R11 Designed by Billie Eilish 'Dark Gothic Pop all the way'</h15>
+
+    <h16>R12 Designed by Myley Cyrus 'Country Classic meets Pop Rock' </h16>    
+
+
+    <h17>Our Luxury rooms
+
+        SR1 Our Double rooms 
+        SR2 Our King rooms
+        SR3 Our Super King rooms</h17>
+
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="pictures/double.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="pictures/king.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="pictures/superking.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="pictures/sleeps4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4_wide.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="pictures/double.jpg" onclick="currentSlide(1)" alt="Double">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="pictures/king.jpg" onclick="currentSlide(2)" alt="King">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="pictures/superking.jpg" onclick="currentSlide(3)" alt="Superking">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="pictures/sleeps4.jpg" onclick="currentSlide(4)" alt="Family Rooms">
+    </div>
+  </div>
+</div>
+
+
+    <h18>Trust Pilot Stars 
+
+        Review1 'Just wow!
+                 We stayed in the Daft Punk room it was amazing spacious room, comfortable bed and so daft punk
+                 The restaurant and bar was superb the food was spectacular and those cocktails so creative i wanted to try them all!'
+        
+        Review2 'Can't wait till our next trip here.
+                 The busted concert was awesome!
+                 being able to just walk to our room after the concert was so good and the rooms are amazing value but so luxurious.
+                 best bit the morning after we enjoyed the day in the hotel spa and what can i say just yes dont forget the spa just swesome!'
+        
+        Review3 'The staff were so accomodating and friendly.
+                 food was spectacular and the cocktails oh the cocktails so so good.
+                 Already planning our next trip so many upcoming bands our new gig destination'
+        
+        Review4 'We came to watch Billie Eilish, what an amazing vibe tonight!
+                 the venue wasnt overcrowded just the right amount for a sold out gig could actually enjoy the music without getting rammed all the time.
+                 definitely appreciated the air controlled venue too dont think I've ever been to a gig and not come out sweaty.
+                 5 stars all the way definitely booking my future gigs here'
+        </h18>
+
 
     <script src="./main.js"></script> 
 </body>

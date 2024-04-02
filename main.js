@@ -53,7 +53,82 @@ startImageTransition();
                             resolve();
                         }
                     }
-        
                 })
             }
         }
+
+        // NavBar
+let open = document.querySelector('.navbar--icon');
+let menu = document.querySelector('.nav--open');
+let close = document.querySelector('.nav--open-icon');
+
+
+open.addEventListener('click', function() {
+  menu.classList.toggle('close');
+});
+
+
+close.addEventListener('click', function() {
+  menu.classList.toggle('close');
+})
+
+// Book now menu
+
+let openbooking = document.querySelector('.booking--icon');
+let menubooking = document.querySelector('.booking--open');
+let closebooking = document.querySelector('.booking--open-icon');
+
+openbooking.addEventListener('click', function() {
+    menubooking.classList.toggle('close');
+  });
+  
+  
+  closebooking.addEventListener('click', function() {
+    menubooking.classList.toggle('close');
+  })
+
+
+  
+  <script>
+{/* Open the Modal */}
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+{/* // Close the Modal */}
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+{/* // Next/previous controls */}
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+{/* // Thumbnail image controls */}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
