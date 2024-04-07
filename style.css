@@ -1,3 +1,28 @@
+h1 {
+  position:relative;
+  color: black;
+  border-style: groove;
+  font-style: "Libre Baskerville", serif;
+} 
+h3 {
+  font-variant-position: super;
+  color: #457B9D;
+  border-color: #F1FAEE;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.main-content{
+  text-align: center;
+  font: "Raleway", serif;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
 /* expo logo image */
 .hotel-logo-container{
   z-index: 1;
@@ -14,16 +39,18 @@
 /* navbar */
 a {
   text-decoration: none;
-  color: #000000;
+  color: #92BFB1;
 }
 a:hover {
   background: #92BFB1;
   color: #333333;
 }
+
 .sticky {  
   position: fixed;
   z-index: 10;
 }
+
 .navbar--container {
   top: 1%;
   background: #F1FAEE;
@@ -31,6 +58,7 @@ a:hover {
   width: 90px;
   box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
 }
+
 .navbar--icon {
   margin-top: 24px;
   margin-left: 49px;
@@ -40,17 +68,19 @@ a:hover {
   color: #92BFB1;
   cursor: pointer;
 }
+
 .navbar--title {
   margin-left: 1%;
   margin-top: 35px;
 }
 .navbar--title h4 {
   writing-mode: vertical-rl;
-  font-family: "Libre+Baskerville", sans-serif;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 0.34em;
   text-transform: uppercase;
   font-size: 0.9em;
 }
+
 .nav--open {
   height: 100vh;
   width: 300px;
@@ -59,20 +89,21 @@ a:hover {
   opacity: 1;
   box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
 }
+
 .nav--open-icon {
   text-align: right;
   padding: 20px;
 }
 .nav--open-icon i {
   font-size: 1.8em;
-  color: #000000;
+  color: #92BFB1;
 }
 .nav--open-icon i:hover {
   color: #333333;
   cursor: pointer;
 }
 .nav--open-title {
-  font-family: "Libre+Baskerville", serif;
+  font-family: "Playfair Display", serif;
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -89,14 +120,16 @@ a:hover {
 .nav--open-menu a {
   font-size: 2em;
   font-weight: 100;
-  font-family: "Libre+Baskerville", serif;
+  font-family: "Playfair Display", serif;
   padding: 15px 0;
 }
+
 .close {
   transform: translateX(-300px);
   transition: all 0.4s ease-out;
   opacity: 0;
 }
+
 
 /* Scrolling hero image */
 /* .scroll-image-box {
@@ -115,20 +148,179 @@ a:hover {
   margin-top: -50px;
 } */
 
-h1 {
-  position:relative;
-  color: black;
-  border-style: groove;
-  font-style: "Libre Baskerville", serif;
-} 
-h3 {
-  font-variant-position: super;
-  color: #457B9D;
-  border-color: #F1FAEE;
-  border-style: solid;
-  border-width: 5px;
+/* Services cards */
+.background {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+  padding: 5vh 0 0 0;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 1200px;
+}
+
+.img-card {
+  position: relative;
+  left: 0px;
+  width: 120px;
+  border-radius: 1em;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+  flex: 0.25; 
+}
+
+.img-card img {
+  min-height: 80vh;
+}
+
+.img-card:hover {
+  flex: 2;
+  cursor: pointer;
+}
+
+/* Lightbox */
+.row > .lightbox-column {
+  padding: 0 1px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lightbox-column {
+  float: left;
+  width: 24%;
+  /* will not work at width 25% */
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.mySlides .column img{
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* footer */
 .footer ul {
   list-style: none;
   padding: 0;
@@ -143,18 +335,14 @@ h3 {
   margin-top: 20px;
   background-color: #F1FAEE;
 }
-/* 
-.footer-social-media-buttons{
-  z-index: 3;
-} */
-
+/* FontAwesome(fa) icons */
 .fa {
   padding: 20px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: 90%;
 }
 
 .fa:hover {
