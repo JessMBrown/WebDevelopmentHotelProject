@@ -1,0 +1,276 @@
+/* general font setting for H1 and P tags without class atributes*/
+
+body h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+body p {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+/* spa hero text settings */
+
+.hero {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/spa hero.jpg");
+    color: white;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    font-size: 200px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  /* spa treatment title settings - expo lounge font link - https://www.cdnfonts.com/halimun.font - maybe use as accent? */
+
+  .treatment-intro {
+    text-align: center;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+ .intro-text {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* spa treatments card settings and hover effect settings */  
+
+.container-one {
+  display: flex;
+  margin: 25px 80px 75px 80px;
+}
+
+.container-two {
+  display: flex;
+  margin: 25px 80px 75px 80px;
+}
+.col {
+    transition: 0.5s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear;
+} 
+
+.col {
+  container: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.col:hover {
+  transform: translateY(-0.8%);
+  box-shadow: 0 4rem 8rem rgba(248, 247, 247, 0.5);
+}
+
+/* treatment 'what's included section' */ 
+.steps-container {
+  text-align: center;
+}
+
+.steps {
+  display: inline-block;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* card footer area background color */ 
+.card-footer {
+  background-color: #457B9D!important;
+}
+
+/*  book treatment button settings */ 
+.book-treatment {
+  border: 2px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*  book now button color changes when hovered */ 
+button:hover {
+  background-color: #E63946;
+  color: white;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+/*  testimonials section settings */ 
+
+.testimony {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2px;
+
+}
+.testimonial-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.header-testimonial {
+  margin-bottom: 32px;
+}
+
+.testimonials-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.card-testimonial {
+  padding: 32px;
+  display: grid;
+  gap: 16px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card-testimonial i {
+  font-size: 40px;
+  color: gold;
+}
+
+.card-testimonial p {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+.card-testimonial img {
+  width: 100px;
+  height:100px;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.card-testimonial name {
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.card-testimonial star-rating{
+  display: flex;
+  align-content: center; 
+}
+
+.checked {
+  color: #F5A41A;
+}
+
+@media (width < 900px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (width < 600px) {
+  testimonials-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* spa section room booking banner */ 
+
+.banner-tess {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Images/spa hero.jpg");
+    height: 50%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: relative;
+    cursor: pointer;
+}
+/* text over banner settings */
+
+.banner-text-tess {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+ }
+  
+ .room-booking {
+  border: 4px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+ }
+  
+/* scroll to top button settings */
+
+ #myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: #457B9D;
+  color: white; 
+  font-family: "Raleway", sans-serif;
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 20px; 
+}
+
+#myBtn:hover {
+  background-color: #E63946;
+}
+
+/* scroll to top button settings end */
+
+/* spa css settings end here */
+
+
+
