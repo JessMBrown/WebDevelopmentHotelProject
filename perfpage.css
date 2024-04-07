@@ -63,6 +63,7 @@ body {
 .coming-up{
     text-align: center;
     font-size: 35px;
+    color: #E63946;
     margin: 20px 0px 50px 0px;
 }
 
@@ -101,6 +102,10 @@ body {
     padding-right: 20px;
 }
 
+.gallery-head{
+    color: #E63946;
+}
+
 .footer{
     background-color: #457B9D;
     padding: 50px 50px;
@@ -122,8 +127,15 @@ body {
     font-size: 40px;
     text-align: center;
     padding: 20px 50px 20px 50px;
-    background-color: #e63946;
     color: #F1FAEE;
+    border: none;
+    outline: none; 
+    background-color: #457B9D;
+    border-radius: 20px;
+}
+
+.tickets-button:hover {
+    background-color: #E63946;
 }
 
 .center {
