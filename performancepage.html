@@ -8,15 +8,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-    crossorigin="anonymous">
+    crossorigin="anonymous"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-    </header>
+  <nav>
+    <div class="navbar--container sticky">
+        <div class="navbar--title"><h4>navigation</h4></div>
+        <div class="navbar--icon"><i class="fas fa-bars"></i></div>
+    </div>
+      <div class="nav--open close sticky">
+        <div class="nav--open-icon"><i class="fas fa-times"></i></div>
+        <div class="nav--open-title">explore</div>
+        <div class="nav--open-menu">
+          <a href="">Rooms</a>
+          <a href="">Performances</a>
+          <a href="">Spa</a>
+          <a href="">Restaurant</a>
+          <a href="">Get in Touch</a>
+        </div>
+      </div>
+  </nav>
 
     <main>
       <div class="welcome-banner">
@@ -32,7 +47,7 @@
           the heart of entertainment at the Expo Lounge Hotel & Spa.
           Every week we play host to a veritable buffet of 
           talented musicians, hilarious comedians and enthusiastic dancers.</h2>
-      </div>
+      </div> <!-- introdution header and text block -->
 
       <div>
         <h2 class="raleway-semibold coming-up">Coming up . . .</h2>
@@ -48,7 +63,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/biigpiig.jpg" class="d-block w-100" alt="Artist Biig Piig">7
+            <img src="images/biigpiig.jpg" class="d-block w-100" alt="Artist Biig Piig">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="raleway-semibold caption-heading">Biig Piig</h5>
               <p class="raleway-semibold caption-text">26/04/24 8:00pm</p>
@@ -72,12 +87,18 @@
         </button>
       </div> <!--coming-up carousel-->
 
+      <div class="center">
+        <a href="perftickets.html">
+          <button class="tickets-button raleway-semibold"> Book your tickets here! </button>
+        </a>
+      </div> <!-- tickets button -->
+
       <div class="intro">
         <h2 class="raleway-light"> Our Performance Room is more than just a venue; it's a hub of creativity,
           a sanctuary for expression, and a haven for those seeking vibrant entertainment.
           Whatever you're craving, our lineup of gigs, comedy nights, and dancing events
           ensures there's something for everyone.</h2>
-      </div>
+      </div> <!-- events text block -->
 
       <div class="gallery">
         <div class="flex-image">
@@ -140,9 +161,7 @@
             the classes, hit the dancefloor and show off your new moves while enjoying electrifying
             live music performances. From salsa to swing, there's something for everyone to dance the night away.</p>
         </div>
-      </div>
-      
-      <!--image gallery of nights explained-->
+      </div> <!-- gallery of events and text descriptions -->
 
       <div class="book-text">
         <h2 class="raleway-light">Join us for an evening of laughter, music, and dance. 
@@ -152,7 +171,7 @@
         <h2 class="raleway-light">So what are you waiting for? 
           Your unforgettable night awaits at the Expo Lounge's Performance Room. 
           Book your next event now!</h2>
-      </div>
+      </div> <!-- book now text block -->
 
       <div class="center">
         <a href="perftickets.html">
@@ -160,19 +179,54 @@
         </a>
       </div> <!-- tickets button -->
 
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <!-- scroll to top button -->
+
     </main>
 
-    <footer> 
-        <div class="footer"> 
-          <p class="raleway-semibold">About us</p>
-          <p class="raleway-semibold">Contact us</p>
-          <p class="raleway-semibold">FAQs</p>
-          <p class="raleway-semibold">Terms and conditions</p>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <h5>Subscribe</h5>
+            <ul>
+              <li><a href="">The Hotel</a></li>
+              <li><a href="">The Performance Lounge</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-content">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">History</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-content">
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="">Where Are We</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-content">
+            <h5>Social</h5>
+            <ul>
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-snapchat-ghost"></a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous"></script>
+    <script src="perfpage.js"></script>
 </body>
 </html>
