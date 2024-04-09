@@ -94,6 +94,17 @@ a {
   }
 /*navbar end*/
 
+/* expo logo image */
+.hotel-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image {
+  width: 30%;
+  height: auto;
+}
+
 /*hero*/
 .welcome-banner {
     position: relative;
