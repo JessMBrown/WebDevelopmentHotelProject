@@ -117,6 +117,7 @@ a {
 
 .welcome-banner img{
     width: 100%;
+    filter: brightness(50%);
 }
 
 .centered {
@@ -166,6 +167,14 @@ a {
     font-size: 25px;
 }
 
+.red {
+    color: #E63946;
+}
+
+.blue {
+    color: #457B9D;
+}
+
 .coming-up{
     text-align: center;
     font-size: 35px;
@@ -176,6 +185,14 @@ a {
 /*carousel*/
 .carousel-div{
     margin: 20px 200px 50px 200px;
+}
+
+.carousel-item img{
+  filter: brightness(50%);
+}
+
+.carousel-item img:hover{
+  filter: brightness(100%);
 }
 
 .caption-heading{
@@ -201,6 +218,11 @@ a {
 .flex-image img{
     width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.flex-image img:hover{
+  filter: hue-rotate(180deg);
 }
   
 .flex-text {
