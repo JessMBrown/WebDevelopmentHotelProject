@@ -16,6 +16,106 @@ body p {
 }
 
 
+/* NavBar */
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i");
+
+a {
+  text-decoration: none;
+  color: #92BFB1;
+}
+a:hover {
+  background: #92BFB1;
+  color: #333333;
+}
+
+.sticky {  
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar--container {
+  top: 1%;
+  background: #ffffff;
+  height: 220px;
+  width: 90px;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+}
+
+.navbar--icon {
+  margin-top: 24px;
+  margin-left: 49px;
+  font-size: 1em;
+}
+.navbar--icon:hover {
+  color: #92BFB1;
+  cursor: pointer;
+}
+
+.navbar--title {
+  margin-left: 1%;
+  margin-top: 35px;
+}
+.navbar--title h4 {
+  writing-mode: vertical-rl;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.nav--open {
+  height: 100vh;
+  width: 300px;
+  background: #ffffff;
+  transition: all 0.4s ease-out;
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+}
+
+.nav--open-icon {
+  text-align: right;
+  padding: 20px;
+}
+.nav--open-icon i {
+  font-size: 1.8em;
+  color: #92BFB1;
+}
+.nav--open-icon i:hover {
+  color: #333333;
+  cursor: pointer;
+}
+.nav--open-title {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-top: 35%;
+}
+.nav--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+.nav--open-menu a {
+  font-size: 2em;
+  font-weight: 100;
+  font-family: "Playfair Display", serif;
+  padding: 15px 0;
+}
+
+.close {
+  transform: translateX(-300px);
+  transition: all 0.4s ease-out;
+  opacity: 0;
+}
+
+
+
+
+
 /* spa hero text settings */
 
 .hero {
