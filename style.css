@@ -12,13 +12,13 @@ h3 {
   border-width: 5px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .main-content{
   text-align: center;
   font: "Raleway", serif;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* expo logo image */
@@ -229,7 +229,7 @@ a:hover {
 }
 
 /* The Close Button */
-.close {
+.myModal-close {
   color: white;
   position: absolute;
   top: 10px;
@@ -238,8 +238,8 @@ a:hover {
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.myModal-close:hover,
+.myModal-close:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
@@ -453,3 +453,27 @@ img.hover-shadow {
   background: #ff6600;
   color: white;
 }
+
+.band-desc-text {
+  position:relative;
+  color: red;
+  border-style: groove;
+  font-style: "Raleway", serif;
+  font-size: large;
+  float: left;
+  text-align: center;
+}
+
+.band-desc-img {
+  max-width: 100%;
+   max-height:100%;
+   float: left;
+}
+
+.band-container{
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  background-color: black;
+ }
