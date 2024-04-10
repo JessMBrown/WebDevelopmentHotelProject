@@ -1,0 +1,135 @@
+body {
+    background-color: #457B9D;
+}
+
+.welcome-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0 0 50px 0;
+    padding: 0;
+    font-size: 60px;
+}
+
+.welcome-banner img{
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.raleway-semibold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.raleway-light {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.heading{
+    text-align: center;
+    margin: 50px 300px 50px 300px;
+}
+
+.heading h1{
+    font-size: 45px;
+}
+
+.intro{
+    text-align: center;
+    margin: 50px 150px 80px 150px;
+}
+
+.intro h2{
+    font-size: 25px;
+}
+
+.coming-up{
+    text-align: center;
+    font-size: 35px;
+    margin: 20px 0px 50px 0px;
+}
+
+.carousel-div{
+    margin: 20px 200px 20px 200px;
+}
+
+.caption-heading{
+    font-size: 30px;
+}
+
+.caption-text{
+    font-size: 25px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 100px 50px 100px;
+}
+  
+.flex-image {
+    width: 50%;
+}
+
+.flex-image img{
+    width: 100%;
+    height: auto;
+}
+  
+.flex-text {
+    width: 50%;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer{
+    background-color: #457B9D;
+    padding: 50px 50px;
+    color: #F1FAEE;
+    font-size: 20px;
+    text-align: center;
+}
+
+.book-text{
+    text-align: center;
+    margin: 50px 150px 50px 150px;
+}
+
+.book-text h2{
+    font-size: 25px;
+}
+
+.tickets-button{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 50px 20px 50px;
+    background-color: #e63946;
+    color: #F1FAEE;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 50px;
+}
