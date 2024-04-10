@@ -3,6 +3,7 @@ let open = document.querySelector('.navbar--icon');
 let menu = document.querySelector('.nav--open');
 let close = document.querySelector('.nav--open-icon');
 
+
 open.addEventListener('click', function() {
   menu.classList.toggle('close');
 });
@@ -12,23 +13,18 @@ close.addEventListener('click', function() {
 });
 
 // Book now menu
+let openBooking = document.querySelector(".booknow--icon"); // Corrected selector
+let menuBooking = document.querySelector(".booknow--open");
+let closeBooking = document.querySelector(".booknow--open-icon");
 
-// let openBooking = document.querySelector('.booking--icon');
-// let menuBooking = document.querySelector('.booking--open');
-// let closeBooking = document.querySelector('.booking--open-icon');
+openBooking.addEventListener("click", function () {
+  console.log("user click");
+  menuBooking.classList.toggle("booknow--close");
+});
 
-// openBooking.addEventListener('click', function() 
-//   {
-//     menuBooking.classList.toggle('booknow--close');
-//   }
-//   );
-  
-  
-  // closeBooking.addEventListener('click', function() 
-  // {
-  //   menuBooking.classList.toggle('booknow--close');
-  // });
-
+closeBooking.addEventListener("click", function () {
+  menuBooking.classList.toggle("booknow--close");
+});
 
 
 // Scrolling hero images
@@ -178,6 +174,25 @@ function openModal() {
     });
   });
 })(jQuery);
+
+
+
+  let mybutton = document.getElementById("myBtn");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+ 
+
+
 
 
 $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(2)").removeAttr("src").removeAttr("srcdoc");

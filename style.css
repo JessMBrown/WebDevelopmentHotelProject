@@ -128,25 +128,22 @@ a:hover {
   z-index: 11;
 }
 
-/* 
-a {
+/* Book now menu */
+
+.booknow--open-menu a {
   text-decoration: none;
-  color: #92BFB1;
+  color: #92bfb1;
 }
-a:hover {
-  background: #92BFB1;
+.booknow--open-menu a:hover {
+  background: #92bfb1;
   color: #333333;
 }
 
-.sticky {  
-  position: fixed;
-  z-index: 10;
-}
 .booknow--container {
-  right:0;
+  right: 0;
   top: 10%;
-  float: right;
-  margin-left: 95%;
+  /* float: right; 
+  margin-left: 95%;  */
   background: #ffffff;
   height: 220px;
   width: 90px;
@@ -159,7 +156,7 @@ a:hover {
   font-size: 1em;
 }
 .booknow--icon:hover {
-  color: #92BFB1;
+  color: #92bfb1;
   cursor: pointer;
 }
 .booknow--title {
@@ -188,7 +185,7 @@ a:hover {
 }
 .booknow--open-icon i {
   font-size: 1.8em;
-  color: #92BFB1;
+  color: #92bfb1;
 }
 .booknow--open-icon i:hover {
   color: #333333;
@@ -216,27 +213,10 @@ a:hover {
   padding: 15px 0;
 }
 .booknow--close {
-  transform: translateX(-300px);
+  transform: translateX(300px);
   transition: all 0.4s ease-out;
   opacity: 0;
-} */
-
-/* Scrolling hero image */
-/* .scroll-image-box {
-  position:relative;
-  height: auto;
-  width: 100%; 
-  
 }
-.scrolling-images {
-  height: auto;
-  width: 100%; 
-  position: absolute;
-  left: 5%;
-  margin-left: -50px;
-  top: 10%;
-  margin-top: -50px;
-} */
 
 /* Services cards */
 .background {
@@ -591,6 +571,28 @@ img.hover-shadow {
     }
   }
 }
+
+.myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #457b9d;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.myBtn:hover {
+  background-color: #e63946;
+}
+
 /* 
 $("#main_bg").append("<div id=\"optimizely_604049823\">...</div>");
 $("#optimizely_604049823").replaceWith("<div id=\"optimizely_604049823\"><!-- TrustBox widget -->\n<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"53da56ff0000640005792dae\" data-style-height=\"130px\" data-style-width=\"100%\" data-theme=\"light\" data-stars=\"4,5\">\n  <a href=\"https://www.trustpilot.com/review/bluevine.com\" target=\"_blank\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget --></div>");
