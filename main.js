@@ -122,3 +122,54 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+
+
+  console.clear(), gsap.registerPlugin(ScrollTrigger);
+
+(function ($) {
+  $(".has-transition_text-reveal").each(function () {
+    $(this)
+      .contents()
+      .filter(function () {
+        return this.nodeType === 3;
+      })
+      .replaceWith(function () {
+        return this.nodeValue.split(/\s+/).map((str) => {
+          return `<span class="text-reveal_wrapper"><span class="text-reveal">${str}</span></span> `;
+        });
+      });
+  });
+
+  const triggers = gsap.utils.toArray(".has-transition_text-reveal.trigger");
+
+  triggers.forEach((trigger) => {
+    const elementToAnimate = trigger.querySelector(".text-reveal");
+
+    gsap.to(elementToAnimate, {
+      y: 0,
+      // duration: 1.2,
+      ease: "power4.inOut",
+      scrollTrigger: {
+        trigger: elementToAnimate,
+        start: "top center",
+        markers: true
+      }
+    });
+  });
+})(jQuery);
+
+
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(2)").removeAttr("src").removeAttr("srcdoc");
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(2)").css({"display":"none", "visibility":""});
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
+$("#optimizely_764986252 iframe").css({"left":-213, "top":977, "width":1821, "height":296});
+$("#wrap").css({"position":"relative", "left":0, "top":0});
+$("#wrap").css({});
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(2)").removeAttr("src").removeAttr("srcdoc");
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(2)").css({"display":"none", "visibility":""});
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(0)").removeAttr("src").removeAttr("srcdoc");
+$("#optimizely_764986252 > .trustpilot-widget > iframe:eq(0)").css({"display":"none", "visibility":""});

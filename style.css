@@ -1,7 +1,6 @@
 h1 {
   position:relative;
   color: black;
-  border-style: groove;
   font-style: "Raleway", serif;
 } 
 h3 {
@@ -456,12 +455,15 @@ img.hover-shadow {
 
 .band-desc-text {
   position:relative;
-  color: red;
+  color:  #000000;
   border-style: groove;
-  font-style: "Raleway", serif;
-  font-size: large;
+  length: 400px;
+  width: 800px;
+  font-style: "Libre Baskerville", serif;
+  font-size: x-large;
   float: left;
-  text-align: center;
+  text-align: justify;
+  padding: 40px;
 }
 
 .band-desc-img {
@@ -475,5 +477,63 @@ img.hover-shadow {
   align-items: center; 
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5px;
-  background-color: black;
+  padding: 70px;
+  background-image: linear-gradient(#F1FAEE, #A8DADC);
+  
  }
+
+
+ .spacer {
+  height: 100vh;
+}
+
+.has-transition_text-reveal {
+  .text-reveal_wrapper {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+
+    .text-reveal {
+      transform: translateY(100%);
+      position: relative;
+      display: block;
+    }
+  }
+}
+/* 
+$("#main_bg").append("<div id=\"optimizely_604049823\">...</div>");
+$("#optimizely_604049823").replaceWith("<div id=\"optimizely_604049823\"><!-- TrustBox widget -->\n<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"53da56ff0000640005792dae\" data-style-height=\"130px\" data-style-width=\"100%\" data-theme=\"light\" data-stars=\"4,5\">\n  <a href=\"https://www.trustpilot.com/review/bluevine.com\" target=\"_blank\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget --></div>");
+$(".trustpilot-widget > a").css({"display":"none", "visibility":""});
+$(".trustpilot-widget").replaceWith("<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"53da56ff0000640005792dae\" data-style-height=\"130px\" data-style-width=\"100%\" data-theme=\"light\" data-stars=\"4,5\" style=\"position: relative;\">\n  <a href=\"https://www.trustpilot.com/review/bluevine.com\" target=\"_blank\" style=\"display: none;\">Trustpilot</a>\n<iframe frameborder=\"0\" scrolling=\"no\" src=\"https://widget.trustpilot.com/trustboxes/53aa8912dec7e10d38f59f36/index.html?locale=en-US&amp;templateId=53aa8912dec7e10d38f59f36&amp;businessunitId=53da56ff0000640005792dae&amp;styleHeight=130px&amp;styleWidth=100%25&amp;theme=light&amp;stars=4%2C5\" style=\"position: relative; height: 130px; width: 100%; border-style: none; display: block; overflow: hidden;\"></iframe></div>");
+$(".trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
+$(".trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
+$(".trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
+$(".trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
+$("#optimizely_604049823").css({"background-color":"#ffffff"});
+$(".trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
+$(".trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
+$("#optimizely_604049823").css({"border-spacing":"49px 90px"});
+$("#optimizely_604049823").css({"border-spacing":"", "height":"130px", "margin":"0px", "padding":"90px", "clear":"both", "position":"relative", "float":"none"});
+$("#optimizely_604049823").css({"display":"none", "visibility":""});
+$("#wrap").append("<div id=\"optimizely_764986252\">...</div>");
+$("#optimizely_764986252").replaceWith("<div id=\"optimizely_764986252\"><!-- TrustBox widget -->\n<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"53da56ff0000640005792dae\" data-style-height=\"130px\" data-style-width=\"100%\" data-theme=\"light\" data-stars=\"4,5\">\n  <a href=\"https://www.trustpilot.com/review/bluevine.com\" target=\"_blank\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget --></div>");
+$("#optimizely_764986252 a").css({"display":"none", "visibility":""});
+$("#optimizely_764986252 > .trustpilot-widget").css({"background-color":"#ffffff"});
+$("#optimizely_764986252 > .trustpilot-widget").css({"padding":"0px", "margin":"50px", "height":"131px"});
+$("#optimizely_764986252 iframe").css({"z-index":3172000});
+$("#optimizely_764986252 > .trustpilot-widget").css({"display":"none", "visibility":""});
+$("#main_bg").append("<div id=\"optimizely_282050013\">...</div>");
+$("#optimizely_282050013").replaceWith("<div id=\"optimizely_282050013\"><!-- TrustBox widget -->\n<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"53da56ff0000640005792dae\" data-style-height=\"130px\" data-style-width=\"100%\" data-theme=\"light\" data-stars=\"4,5\">\n  <a href=\"https://www.trustpilot.com/review/bluevine.com\" target=\"_blank\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget --></div>");
+$("#optimizely_282050013").css({"background-color":"#ffffff", "margin":"50px", "height":"130px"});
+$("#optimizely_282050013 a").css({"display":"none", "visibility":""});
+$("#optimizely_282050013 > .trustpilot-widget").css({"width":"100%"});
+$("#optimizely_282050013 > .trustpilot-widget").css({"width":"100%", "margin":"50px", "text-align":"", "position":""});
+$("#optimizely_282050013 > .trustpilot-widget").css({"margin":"0px"});
+$("#optimizely_282050013").css({"width":"100%", "margin":"0px", "padding":"50px", "height":"230px", "position":"", "float":""});
+$("#optimizely_282050013").css({"height":"15em", "width":"100%", "padding":"3em"});
+$("#optimizely_282050013").css({"padding":"28px", "width":"100%", "height":"183px"});
+$(".row").css({"margin":"", "padding":"", "height":"800px"});
+$("#main_bg > .container").css({"height":"800px"});
+$(".col").css({"height":"700px"});
+$(".row").css({"height":"755px"});
+$("#main_bg > .container").css({"height":"775px"}); */
