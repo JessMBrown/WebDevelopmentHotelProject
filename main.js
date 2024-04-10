@@ -11,6 +11,26 @@ close.addEventListener('click', function() {
   menu.classList.toggle('close');
 });
 
+// Book now menu
+
+// let openBooking = document.querySelector('.booking--icon');
+// let menuBooking = document.querySelector('.booking--open');
+// let closeBooking = document.querySelector('.booking--open-icon');
+
+// openBooking.addEventListener('click', function() 
+//   {
+//     menuBooking.classList.toggle('booknow--close');
+//   }
+//   );
+  
+  
+  // closeBooking.addEventListener('click', function() 
+  // {
+  //   menuBooking.classList.toggle('booknow--close');
+  // });
+
+
+
 // Scrolling hero images
 // startImageTransition();
         

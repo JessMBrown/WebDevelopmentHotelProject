@@ -1,12 +1,12 @@
 h1 {
-  position:relative;
+  position: relative;
   color: black;
   font-style: "Raleway", serif;
-} 
+}
 h3 {
   font-variant-position: super;
-  color: #457B9D;
-  border-color: #F1FAEE;
+  color: #457b9d;
+  border-color: #f1faee;
   border-style: solid;
   border-width: 5px;
 }
@@ -15,20 +15,20 @@ h3 {
   box-sizing: border-box;
 }
 
-.main-content{
+.main-content {
   text-align: center;
   font: "Raleway", serif;
 }
 
 /* expo logo image */
-.hotel-logo-container{
+.hotel-logo-container {
   z-index: 1;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-.logo-image img{
+.logo-image img {
   max-width: 100%;
   height: auto;
 }
@@ -36,21 +36,21 @@ h3 {
 /* navbar */
 a {
   text-decoration: none;
-  color: #92BFB1;
+  color: #92bfb1;
 }
 a:hover {
-  background: #92BFB1;
+  background: #92bfb1;
   color: #333333;
 }
 
-.sticky {  
+.sticky {
   position: fixed;
   z-index: 10;
 }
 
 .navbar--container {
   top: 1%;
-  background: #F1FAEE;
+  background: #f1faee;
   height: 220px;
   width: 90px;
   box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
@@ -62,7 +62,7 @@ a:hover {
   font-size: 1em;
 }
 .navbar--icon:hover {
-  color: #92BFB1;
+  color: #92bfb1;
   cursor: pointer;
 }
 
@@ -81,7 +81,7 @@ a:hover {
 .nav--open {
   height: 100vh;
   width: 300px;
-  background: #F1FAEE;
+  background: #f1faee;
   transition: all 0.4s ease-out;
   opacity: 1;
   box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
@@ -93,7 +93,7 @@ a:hover {
 }
 .nav--open-icon i {
   font-size: 1.8em;
-  color: #92BFB1;
+  color: #92bfb1;
 }
 .nav--open-icon i:hover {
   color: #333333;
@@ -128,6 +128,98 @@ a:hover {
   z-index: 11;
 }
 
+/* 
+a {
+  text-decoration: none;
+  color: #92BFB1;
+}
+a:hover {
+  background: #92BFB1;
+  color: #333333;
+}
+
+.sticky {  
+  position: fixed;
+  z-index: 10;
+}
+.booknow--container {
+  right:0;
+  top: 10%;
+  float: right;
+  margin-left: 95%;
+  background: #ffffff;
+  height: 220px;
+  width: 90px;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+}
+
+.booknow--icon {
+  margin-top: 24px;
+  margin-right: 49px;
+  font-size: 1em;
+}
+.booknow--icon:hover {
+  color: #92BFB1;
+  cursor: pointer;
+}
+.booknow--title {
+  margin-left: 27px;
+  margin-top: 35px;
+}
+.booknow--title h4 {
+  writing-mode: vertical-rl;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+.booknow--open {
+  height: 100vh;
+  width: 300px;
+  background: #ffffff;
+  transition: all 0.4s ease-out;
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+}
+
+.booknow--open-icon {
+  text-align: right;
+  padding: 20px;
+}
+.booknow--open-icon i {
+  font-size: 1.8em;
+  color: #92BFB1;
+}
+.booknow--open-icon i:hover {
+  color: #333333;
+  cursor: pointer;
+}
+.booknow--open-title {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-top: 35%;
+}
+.booknow--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+.booknow--open-menu a {
+  font-size: 2em;
+  font-weight: 100;
+  font-family: "Playfair Display", serif;
+  padding: 15px 0;
+}
+.booknow--close {
+  transform: translateX(-300px);
+  transition: all 0.4s ease-out;
+  opacity: 0;
+} */
 
 /* Scrolling hero image */
 /* .scroll-image-box {
@@ -173,7 +265,7 @@ a:hover {
   justify-content: center;
   object-fit: cover;
   transition: 0.3s ease-in-out;
-  flex: 0.25; 
+  flex: 0.25;
 }
 
 .img-card img {
@@ -291,7 +383,7 @@ a:hover {
   top: 0;
 }
 
-.mySlides .column img{
+.mySlides .column img {
   margin-bottom: -4px;
 }
 
@@ -330,9 +422,9 @@ img.hover-shadow {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 20px;
-  background-color: #F1FAEE;
+  background-color: #f1faee;
 }
 /* FontAwesome(fa) icons */
 .fa {
@@ -344,16 +436,16 @@ img.hover-shadow {
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
@@ -454,36 +546,35 @@ img.hover-shadow {
 }
 
 .band-desc-text {
-  position:relative;
-  color:  #000000;
+  position: relative;
+  color: #000000;
   border-style: groove;
-  length: 400px;
   width: 800px;
-  font-style: "Libre Baskerville", serif;
-  font-size: x-large;
   float: left;
   text-align: justify;
   padding: 40px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .band-desc-img {
   max-width: 100%;
-   max-height:100%;
-   float: left;
+  max-height: 100%;
+  float: left;
 }
 
-.band-container{
+.band-container {
   display: grid;
-  align-items: center; 
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5px;
   padding: 70px;
-  background-image: linear-gradient(#F1FAEE, #A8DADC);
-  
- }
+  background-image: linear-gradient(#f1faee, #a8dadc);
+}
 
-
- .spacer {
+.spacer {
   height: 100vh;
 }
 
