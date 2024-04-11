@@ -263,6 +263,34 @@
         </a>
       </div> <!-- tickets button -->
 
+      <!--scroll to top button starts here -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- Scroll top button Script code start -->
+
+<script>
+
+  let mybutton = document.getElementById("myBtn");
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  <!-- Scroll top button Script html end -->
+
     </main>
 
     <footer>
