@@ -594,9 +594,8 @@ img.hover-shadow {
 }
 
 .map-desc-img {
-  max-width: 100px;
-  max-height: 100px;
-  float: left;
+  max-width: 100%;
+  height: auto;
 }
 
 .map-container {
@@ -606,6 +605,7 @@ img.hover-shadow {
   margin-right: auto;
   width: 50%;
 }
+
 
 /* 
  * Optional: Makes the sample page fill the window. 
