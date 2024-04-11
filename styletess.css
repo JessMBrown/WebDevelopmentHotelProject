@@ -32,11 +32,12 @@ a:hover {
 }
 
 .navbar--container {
-  top: 1%;
+  top: 10%;
   background: #f1faee;
   height: 220px;
   width: 90px;
   box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+  
 }
 
 .navbar--icon {
@@ -111,6 +112,136 @@ a:hover {
   z-index: 11;
 }
 
+/* Book now menu */
+.booknow--open-menu a {
+  text-decoration: none;
+  color: #92bfb1;
+}
+.booknow--open-menu a:hover {
+  background: #92bfb1;
+  color: #333333;
+}
+.booknow--container {
+  right: 0;
+  top: 10%;
+  background: #f1faee;
+  height: 220px;
+  width: 90px;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+}
+.booknow--icon {
+  margin-top: 24px;
+  margin-left: 25%;
+  font-size: 1em;
+}
+.booknow--icon:hover {
+  color: #92bfb1;
+  cursor: pointer;
+}
+.booknow--title {
+  margin-left: 27px;
+  margin-top: 35px;
+}
+.booknow--title h4 {
+  writing-mode: vertical-rl;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+.booknow--open {
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
+  width: auto;
+  background: #ffffff;
+  transition: all 0.4s ease-out;
+  opacity: 1;
+  box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+  right: 0;
+}
+.booknow--open-icon {
+  text-align: right;
+  padding: 20px;
+}
+.booknow--open-icon i {
+  font-size: 1.8em;
+  color: #92bfb1;
+}
+.booknow--open-icon i:hover {
+  color: #333333;
+  cursor: pointer;
+}
+.booknow--open-title {
+  font-family: "Raleway", serif;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin-top: 1%;
+}
+.booknow--open-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+}
+.booknow--open-menu a {
+  font-size: 2em;
+  font-weight: 100;
+  font-family: "Raleway", serif;
+  padding: 15px 0;
+}
+.booknow--close {
+  transform: translateX(2000px);
+  transition: all 0.4s ease-out;
+  opacity: 0;
+}
+
+/* booking form */
+.booking-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #fff;
+}
+.elem-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-weight: bold;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+}
+button {
+  background: #457b9d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* expo logo image */
+.hotel-logo-container {
+  z-index: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.logo-image img {
+  max-width: 100%;
+  height: auto;
+}
 /* spa hero text settings */
 
 .hero {

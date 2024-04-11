@@ -39,7 +39,86 @@
               </div>
           </nav>
 
+          <div class="hotel-logo-container">
+            <div class="logo-image">
+              <a href="/index.html"><img src="pictures/hotellogo.png" alt="Expo Lounge logo"/></a>
+            </div>
+          </div>
 
+          <!-- Book now container -->
+    <div class="booknow--container sticky">
+      <div class="booknow--title"><h4>Book now</h4></div>
+      <div class="booknow--icon"><i class="fas fa-bars"></i></div>
+    </div>
+    <div class="booknow--open booknow--close sticky">
+      <div class="booknow--open-icon"><i class="fas fa-times"></i></div>
+      <div class="booknow--open-title">What would you like to book</div>
+      <div class="booknow--open-menu">
+        <div class="booking-form-container">
+<!-- Booking form -->
+          <form class="booking-form" action="#" method="post">
+            <div class="elem-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Z\s-a-z]{3,20}" required>
+            </div>
+            <div class="elem-group">
+                <label for="email">Your E-mail</label>
+                <input type="email" id="email" name="visitor_email" placeholder=john.doe@email.com required>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="078834-838-387" required>
+            </div>
+            <hr>
+            <div class="elem-group inlined">
+                <label for="adult">Adults</label>
+                <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="child">Children</label>
+                <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="checkin-date">Check-in Date</label>
+                <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="checkout-date">Check-out Date</label>
+                <input type="date" id="checkout-date" name="checkout" required>
+            </div>
+            <div class="elem-group">
+                <label for="room-selection">Select Room Preference</label>
+                <select id="room-selection" name="room_preference" required>
+                    <option value="">Choose a Room from the List</option>
+                    <option value="Musician-Designed">Any Musical Room</option>
+                    <option value="Standard-Double">Double</option>
+                    <option value="Standard-King">King</option>
+                    <option value="Standard-Super-King">Superking</option>
+                    <option value="Standard-Sleeps-4">Sleeps 4</option>
+                    <option value="5-Seconds-of-Summer">5 Seconds of Summer</option>
+                    <option value="Billie-Eilish">Billie Eilish</option>
+                    <option value="Calvin-Harris">Calvin Harris</option>
+                    <option value="Coldplay">Coldplay</option>
+                    <option value="DaftPunk">DaftPunk</option>
+                    <option value="Imagine-Dragons">Imagine Dragons</option>
+                    <option value="Linkin-Park">Linkin Park</option>
+                    <option value="Myley-Cyrus">Myley Cyrus</option>
+                    <option value="Panic-At-The-Disco">Panic at The Disco</option>
+                    <option value="Tenaciousd">Tenaciousd</option>
+                    <option value="The-Weeknd">The Weeknd</option>
+                    <option value="Twenty-one-pilots">Twenty One Pilots</option>
+                </select>
+            </div>
+            <hr>
+            <div class="elem-group">
+                <label for="message">Anything Else?</label>
+                <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+            </div>
+            <button type="submit">Book The Rooms</button>
+        </form>
+       </div>
+     </div>
+  </div>
 
 <!--hero section starts here - spa image with text overlay -->
 
@@ -290,7 +369,7 @@
           <div class="banner-tess">
             <div class="banner-text-tess">
               <h1>BOOK YOUR STAY WITH US</h1>
-              <button class="room-booking">BOOK NOW</button>
+              <a href="/index.html"><button class="room-booking">BOOK NOW</button></a>
             </div>
           </div><br>
 

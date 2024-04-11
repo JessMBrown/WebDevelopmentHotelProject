@@ -102,6 +102,19 @@ function carousel() {
   setTimeout(carousel, 3000);
 }
 
+// Main text content animation
+ScrollReveal({
+  //reset: true,
+  distance: '60px',
+  duration: 2500,
+  delay: 400
+});
+
+//target elements, and specify options to create reveal animations
+ScrollReveal().reveal('.main-title-from-the-left', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.main-title-from-the-right', { delay: 500, origin: 'right' });
+ScrollReveal().reveal('.main-content-text-box', { delay: 700, origin: 'right' });
+
 // LightBox
 function openModal() {
     document.getElementById("myModal").style.display = "block";
@@ -175,65 +188,3 @@ function openModal() {
     });
   });
 })(jQuery);
-
-
-
-  // let mybutton = document.getElementById("myBtn");
-  // window.onscroll = function() {scrollFunction()};
-  // function scrollFunction() {
-  //   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-  //     mybutton.style.display = "block";
-  //   } else {
-  //     mybutton.style.display = "none";
-  //   }
-  // }
-  // function topFunction() {
-  //   document.body.scrollTop = 0;
-  //   document.documentElement.scrollTop = 0;
-  // }
-
- // Initialize and add the map
-let map;
-
-async function initMap() {
-  // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-
-
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
-  });
-
-    // The marker, positioned at Uluru
-    const marker = new AdvancedMarkerElement({
-      map: map,
-      position: position,
-      title: "Uluru",
-    });
-  }
-  
-  initMap();
-
-
-
-
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(2)").removeAttr("src").removeAttr("srcdoc");
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(2)").css({"display":"none", "visibility":""});
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
-// $("#optimizely_764986252 iframe").css({"left":-213, "top":977, "width":1821, "height":296});
-// $("#wrap").css({"position":"relative", "left":0, "top":0});
-// $("#wrap").css({});
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(2)").removeAttr("src").removeAttr("srcdoc");
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(2)").css({"display":"none", "visibility":""});
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(0)").removeAttr("src").removeAttr("srcdoc");
-// $("#optimizely_764986252 > .trustpilot-widget > iframe:eq(0)").css({"display":"none", "visibility":""});

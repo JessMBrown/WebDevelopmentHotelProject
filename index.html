@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap">
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Expo Lounge Hotel & Spa</title>
 </head>
 
@@ -55,7 +56,7 @@
             </div>
             <div class="elem-group">
                 <label for="phone">Your Phone</label>
-                <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" required>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="078834-838-387" required>
             </div>
             <hr>
             <div class="elem-group inlined">
@@ -78,9 +79,23 @@
                 <label for="room-selection">Select Room Preference</label>
                 <select id="room-selection" name="room_preference" required>
                     <option value="">Choose a Room from the List</option>
-                    <option value="connecting">Connecting</option>
-                    <option value="adjoining">Adjoining</option>
-                    <option value="adjacent">Adjacent</option>
+                    <option value="Musician-Designed">Any Musical Room</option>
+                    <option value="Standard-Double">Double</option>
+                    <option value="Standard-King">King</option>
+                    <option value="Standard-Super-King">Superking</option>
+                    <option value="Standard-Sleeps-4">Sleeps 4</option>
+                    <option value="5-Seconds-of-Summer">5 Seconds of Summer</option>
+                    <option value="Billie-Eilish">Billie Eilish</option>
+                    <option value="Calvin-Harris">Calvin Harris</option>
+                    <option value="Coldplay">Coldplay</option>
+                    <option value="DaftPunk">DaftPunk</option>
+                    <option value="Imagine-Dragons">Imagine Dragons</option>
+                    <option value="Linkin-Park">Linkin Park</option>
+                    <option value="Myley-Cyrus">Myley Cyrus</option>
+                    <option value="Panic-At-The-Disco">Panic at The Disco</option>
+                    <option value="Tenaciousd">Tenaciousd</option>
+                    <option value="The-Weeknd">The Weeknd</option>
+                    <option value="Twenty-one-pilots">Twenty One Pilots</option>
                 </select>
             </div>
             <hr>
@@ -120,46 +135,34 @@
       </div>
     </div>
 
-    <!-- <section class="container-fluid spacer">
 
-    </section>
-    <section class="container-fluid content">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="has-transition_text-reveal trigger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
-            <h2 class="has-transition_text-reveal trigger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-            <h3 class="has-transition_text-reveal trigger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
-            <h4 class="has-transition_text-reveal trigger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-            <h5 class="has-transition_text-reveal trigger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-            <h6 class="has-transition_text-reveal trigger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
-            <p class="has-transition_text-reveal trigger">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid spacer">
-    
-    </section> -->
+
 
 
     <!-- About section -->
-    <div class="main-content">
-      <h1> Welcome </h1>
-      <h1>to the Expo Lounge Hotel</h1>
-      <h1> home to music</h1>
+      <section class="sec-01">
+        <div class="main-content-container">
+          <h2 class="main-title-from-the-left">Welcome</h2>
+          <h2 class="main-title-from-the-right">to the Expo Lounge Hotel</h2>
+          <h2 class="main-title-from-the-left">home to music</h2>
+  
+          <div class="main-content">
+            <div class="main-content-text-box">
+              <p id="history">We are the Expo Lounge founded in 2024 by the group project 9.
+                The home to music, where the greatest artists of today come together and bring you the very latest music.
+                Come to one of many music performances every week in the performance lounge, 
+                while your hear check out our luxury spa where you can be pampered and spoiled.
+                Feeling peckish? dont forget to stop by our 5 star michellin restaurant and bar boasting some of the most unique cocktails on offer in the UK.
+                Theres so much to do while here at the Expo Lounge hotel why not make it a holiday and stay with us in one of Artist designed premium star rooms or one of luxury rooms available.
+                We also cater for weddings and functions please get in touch <here> to request a tour.</p>
 
-      <p id="history">We are the Expo Lounge founded in 2024 by the group project 9.
-          The home to music, where the greatest artists of today come together and bring you the very latest music.
-          Come to one of many music performances every week in the performance lounge, 
-          while your hear check out our luxury spa where you can be pampered and spoiled.
-          Feeling peckish? dont forget to stop by our 5 star michellin restaurant and bar boasting some of the most unique cocktails on offer in the UK.
-          Theres so much to do while here at the Expo Lounge hotel why not make it a holiday and stay with us in one of Artist designed premium star rooms or one of luxury rooms available.
-          We also cater for weddings and functions please get in touch <here> to request a tour.</p>
-
-      <p>Our Premium Star rooms Designed by the Stars</p>
-      <p id="rooms"></p>
-    </div>
+                <h2 class="main-title-from-the-righ">Our Premium Star rooms Designed by the Stars</h2>
+            <p id="rooms"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
 
     <div class="themed-rooms-container">
       <span class="background">
@@ -215,7 +218,7 @@
       </span>
     </div>
 
-    <h2 style="text-align:center">Our Luxury Rooms</h2>
+    <h3 style="text-align:center">Our Luxury Rooms</h3>
 
       <!-- Webpage lightbox images -->
     <div class="lightbox-container">
@@ -282,7 +285,33 @@
       </div>
     </div> 
     
-    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+    <!--scroll to top button starts here -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- Scroll top button Script code start -->
+
+<script>
+
+  let mybutton = document.getElementById("myBtn");
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  <!-- Scroll top button Script html end -->
 
   </main>
 
@@ -335,28 +364,6 @@
 </div>
 <!-- End TrustBox widget -->
 
-
-        <!-- <div class="footer-social-media-buttons">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-pinterest"></a>
-          <a href="#" class="fa fa-snapchat-ghost"></a>
-          <a href="#" class="fa fa-skype"></a>
-          <a href="#" class="fa fa-android"></a>
-          <a href="#" class="fa fa-dribbble"></a>
-          <a href="#" class="fa fa-vimeo"></a>
-          <a href="#" class="fa fa-tumblr"></a>
-          <a href="#" class="fa fa-vine"></a>
-          <a href="#" class="fa fa-foursquare"></a>
-          <a href="#" class="fa fa-stumbleupon"></a>
-          <a href="#" class="fa fa-flickr"></a>
-          <a href="#" class="fa fa-yahoo"></a>
-          <a href="#" class="fa fa-reddit"></a>
-          <a href="#" class="fa fa-rss"></a> -->
         </div>
       </div>
     </div>

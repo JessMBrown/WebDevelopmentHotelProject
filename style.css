@@ -1,16 +1,24 @@
 /* Global settings */
-h1 {
+h1, h2{
   position: relative;
-  color: black;
-  font-style: "Raleway", serif;
+  color: #000000;
+  width: 800px;
+  float: left;
+  text-align: justify;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
+
 h3 {
-  font-variant-position: super;
-  color: #457b9d;
-  border-color: #f1faee;
-  border-style: solid;
-  border-width: 5px;
+  position: center;
+  color: #000000;
+
+  font-family: "Raleway", sans-serif;
+ 
 }
+
 * {
   box-sizing: border-box;
 }
@@ -157,7 +165,7 @@ a:hover {
   font-size: 0.9em;
 }
 .booknow--open {
-  max-height: calc(100vh - 200px);
+  max-height: calc(100vh - 50px);
   overflow-y: auto;
   width: auto;
   background: #ffffff;
@@ -229,7 +237,7 @@ textarea {
   font-family: "Raleway", sans-serif;
 }
 button {
-  background: #457B9D;
+  background: #457b9d;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -282,7 +290,7 @@ button {
 }
 .lightbox-column {
   float: left;
-  width: 24%;
+  width: 25%;
   /* will not work at width 25% */
 }
 
@@ -571,6 +579,34 @@ img.hover-shadow {
   height: 100%;
 }
 
+.map-desc-text {
+  position: relative;
+  color: #000000;
+  border-style: groove;
+  width: 800px;
+  float: left;
+  text-align: justify;
+  padding: 40px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.map-desc-img {
+  max-width: 100px;
+  max-height: 100px;
+  float: left;
+}
+
+.map-container {
+  z-index: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* 
  * Optional: Makes the sample page fill the window. 
  */
@@ -618,3 +654,102 @@ $("#main_bg > .container").css({"height":"800px"});
 $(".col").css({"height":"700px"});
 $(".row").css({"height":"755px"});
 $("#main_bg > .container").css({"height":"775px"}); */
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  color: black;
+}
+
+.main-content-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title-from-the-left .main-title-from-the-right{
+  font-size: 4em;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+
+.main-content{
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content .main-content-text-box{
+  z-index: 222;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  /* max-width: auto; */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transform: translate(-80px, 50px);
+  font-family: "Raleway", sans-serif;
+
+}
+
+.main-content-text-box{
+  position: relative;
+  color: #000000;
+  border-style: groove;
+  width: 800px;
+  float: left;
+  text-align: justify;
+  padding: 40px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+/* .main-content .main-content-text-box h3{
+  font-size: 2em;
+  margin-bottom: 10px;
+} */
+/* 
+.section-title{
+  font-size: 3em;
+  margin-bottom: 80px;
+} */
+
+/* scroll to top button settings */
+
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: #457B9D;
+  color: white; 
+  font-family: "Raleway", sans-serif;
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 20px; 
+}
+
+#myBtn:hover {
+  background-color: #E63946;
+}
+
+/* scroll to top button settings end */
