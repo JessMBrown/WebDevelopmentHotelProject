@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Where are We</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script></head>
+
+<body>
+
+    <gmp-map center="54.26812768769308, -2.351783273673784" zoom="10" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="54.26812768769308, -2.351783273673784" title="Bondi Beach">
+          <img class="flag-icon"
+               src="https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"/>
+        </gmp-advanced-marker>
+      </gmp-map>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&loading=async&libraries=marker&v=beta&solution_channel=GMP_CCS_complexmarkers_v2"
+        defer
+      ></script>
+
+    <nav>
+      <div class="navbar--container sticky">
+        <div class="navbar--title"><h4>navigation</h4></div>
+        <div class="navbar--icon"><i class="fas fa-bars"></i></div>
+      </div>
+        <div class="nav--open close sticky">
+          <div class="nav--open-icon"><i class="fas fa-times"></i></div>
+          <div class="nav--open-title">explore</div>
+          <div class="nav--open-menu">
+            <a href="">Rooms</a>
+            <a href="">Performances</a>
+            <a href="">Spa</a>
+            <a href="">Restaurant</a>
+            <a href="">Get in Touch</a>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <!--expo logo image-->
+        <div class="hotel-logo-container">
+          <div class="logo-image">
+            <a href="/index.html"><img src="pictures/hotellogo.png" alt="Expo Lounge logo"/></a>
+          </div>
+        </div>
+
+    </main>
+
+    <head>
+        <title>Add Map</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <script type="module" src="./index.js"></script>
+      </head>
+      <body>
+        <h3>My Google Maps Demo</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+    
+        <!-- prettier-ignore -->
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
+      </body>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <h5>Subscribe</h5>
+            <ul>
+              <li><a href="">The Hotel</a></li>
+              <li><a href="">The Performance Lounge</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-content">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">History</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-content">
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="">Where Are We</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-content">
+            <h5>Social</h5>
+            <ul>
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-snapchat-ghost"></a></li>
+            </ul>
+          </div>
+
+        </footer>
+        <script src="./main.js"></script> 
+      
+        
+      </body>
+      </html>
