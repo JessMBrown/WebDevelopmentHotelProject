@@ -2,6 +2,101 @@ body {
     background-color: #457B9D;
 }
 
+/* navbar */
+a {
+    text-decoration: none;
+    color: #92bfb1;
+  }
+  a:hover {
+    background: #92bfb1;
+    color: #333333;
+  }
+  
+  .sticky {
+    position: fixed;
+    z-index: 10;
+  }
+  
+  .navbar--container {
+    top: 1%;
+    background: #f1faee;
+    height: 220px;
+    width: 90px;
+    box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+  }
+  
+  .navbar--icon {
+    margin-top: 10px;
+    margin-left: 60%;
+    font-size: 1em;
+  }
+  .navbar--icon:hover {
+    color: #92bfb1;
+    cursor: pointer;
+  }
+  
+  .navbar--title {
+    margin-left: 1%;
+    margin-top: 35px;
+  }
+  .navbar--title h4 {
+    writing-mode: vertical-rl;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+  
+  .nav--open {
+    height: 100vh;
+    width: 300px;
+    background: #F1FAEE;
+    transition: all 0.4s ease-out;
+    opacity: 1;
+    box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+  }
+  
+  .nav--open-icon {
+    text-align: right;
+    padding: 20px;
+  }
+  .nav--open-icon i {
+    font-size: 1.8em;
+    color: #92bfb1;
+  }
+  .nav--open-icon i:hover {
+    color: #333333;
+    cursor: pointer;
+  }
+  .nav--open-title {
+    font-family: "Raleway", serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: 35%;
+  }
+  .nav--open-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .nav--open-menu a {
+    font-size: 2em;
+    font-weight: 100;
+    font-family: "Raleway", serif;
+    padding: 15px 0;
+  }
+  
+  .close {
+    transform: translateX(-300px);
+    transition: all 0.4s ease-out;
+    opacity: 0;
+    z-index: 11;
+  }
+
 .welcome-banner {
     position: relative;
     text-align: center;
@@ -133,3 +228,56 @@ body {
     height: 100px;
     margin-bottom: 50px;
 }
+
+/* footer */
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    background-color: #f1faee;
+  }
+  /* FontAwesome(fa) icons */
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3b5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55acee;
+    color: white;
+  }
+ 
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+ 
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  

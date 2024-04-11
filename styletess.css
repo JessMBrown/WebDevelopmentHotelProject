@@ -16,38 +16,36 @@ body p {
 }
 
 
-/* NavBar */
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:200,400|Playfair+Display:400,400i");
-
+/* navbar */
 a {
   text-decoration: none;
-  color: #92BFB1;
+  color: #92bfb1;
 }
 a:hover {
-  background: #92BFB1;
+  background: #92bfb1;
   color: #333333;
 }
 
-.sticky {  
+.sticky {
   position: fixed;
   z-index: 10;
 }
 
 .navbar--container {
   top: 1%;
-  background: #ffffff;
+  background: #f1faee;
   height: 220px;
   width: 90px;
   box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
 }
 
 .navbar--icon {
-  margin-top: 24px;
-  margin-left: 49px;
+  margin-top: 10px;
+  margin-left: 60%;
   font-size: 1em;
 }
 .navbar--icon:hover {
-  color: #92BFB1;
+  color: #92bfb1;
   cursor: pointer;
 }
 
@@ -57,7 +55,7 @@ a:hover {
 }
 .navbar--title h4 {
   writing-mode: vertical-rl;
-  font-family: "Oswald", sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 0.34em;
   text-transform: uppercase;
   font-size: 0.9em;
@@ -66,7 +64,7 @@ a:hover {
 .nav--open {
   height: 100vh;
   width: 300px;
-  background: #ffffff;
+  background: #f1faee;
   transition: all 0.4s ease-out;
   opacity: 1;
   box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
@@ -78,14 +76,14 @@ a:hover {
 }
 .nav--open-icon i {
   font-size: 1.8em;
-  color: #92BFB1;
+  color: #92bfb1;
 }
 .nav--open-icon i:hover {
   color: #333333;
   cursor: pointer;
 }
 .nav--open-title {
-  font-family: "Playfair Display", serif;
+  font-family: "Raleway", serif;
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -102,7 +100,7 @@ a:hover {
 .nav--open-menu a {
   font-size: 2em;
   font-weight: 100;
-  font-family: "Playfair Display", serif;
+  font-family: "Raleway", serif;
   padding: 15px 0;
 }
 
@@ -110,11 +108,8 @@ a:hover {
   transform: translateX(-300px);
   transition: all 0.4s ease-out;
   opacity: 0;
+  z-index: 11;
 }
-
-
-
-
 
 /* spa hero text settings */
 
@@ -371,6 +366,55 @@ button:hover {
 /* scroll to top button settings end */
 
 /* spa css settings end here */
+
+/* footer */
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+  background-color: #f1faee;
+}
+/* FontAwesome(fa) icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 
 

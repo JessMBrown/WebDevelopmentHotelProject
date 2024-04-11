@@ -130,7 +130,6 @@ a:hover {
 
 /* Book now menu */
 
-
 .booknow--open-menu a {
   text-decoration: none;
   color: #92bfb1;
@@ -145,7 +144,7 @@ a:hover {
   top: 1%;
   /* float: right; 
   margin-left: 95%;  */
-  background: #F1FAEE;
+  background: #f1faee;
   height: 220px;
   width: 90px;
   box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
@@ -172,12 +171,23 @@ a:hover {
   font-size: 0.9em;
 }
 .booknow--open {
-  height: 100vh;
-  width: 300px;
+
+  max-height: calc(100vh - 200px);
+
+  overflow-y: auto;
+
+  width: auto;
+
   background: #ffffff;
+
   transition: all 0.4s ease-out;
+
   opacity: 1;
+
   box-shadow: 2px 2px 15px rgba(51, 51, 51, 0.1);
+
+  right: 0;
+
 }
 
 .booknow--open-icon {
@@ -193,12 +203,18 @@ a:hover {
   cursor: pointer;
 }
 .booknow--open-title {
+
   font-family: "Raleway", serif;
+
   font-size: 0.8em;
+
   text-transform: uppercase;
+
   letter-spacing: 0.2em;
+
   text-align: center;
-  margin-top: 35%;
+
+  margin-top: 1%;
 }
 .booknow--open-menu {
   height: 100%;
@@ -219,6 +235,55 @@ a:hover {
   opacity: 0;
 }
 
+/* booking form */
+
+.booking-form {
+  width: 500px;
+
+  margin: 0 auto;
+
+  padding: 50px;
+
+  background: #fff;
+}
+
+.elem-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  background: #007bff;
+
+  color: #fff;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
 /* Services cards */
 .background {
   display: grid;
@@ -430,28 +495,8 @@ img.hover-shadow {
   color: white;
 }
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
 .fa-instagram {
   background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
   color: white;
 }
 
@@ -459,71 +504,6 @@ img.hover-shadow {
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-.fa-android {
-  background: #a4c639;
-  color: white;
-}
-
-.fa-dribbble {
-  background: #ea4c89;
-  color: white;
-}
-
-.fa-vimeo {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-
-.fa-vine {
-  background: #00b489;
-  color: white;
-}
-
-.fa-foursquare {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-stumbleupon {
-  background: #eb4924;
-  color: white;
-}
-
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-
-.fa-yahoo {
-  background: #430297;
-  color: white;
-}
-
-.fa-soundcloud {
-  background: #ff5500;
-  color: white;
-}
-
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
-
-.fa-rss {
-  background: #ff6600;
-  color: white;
 }
 
 .band-desc-text {
@@ -665,7 +645,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 /* 
 $("#main_bg").append("<div id=\"optimizely_604049823\">...</div>");

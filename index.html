@@ -44,11 +44,101 @@
       <div class="booknow--open-icon"><i class="fas fa-times"></i></div>
       <div class="booknow--open-title">What would you like to book</div>
       <div class="booknow--open-menu">
-      <a href="">Room type 1</a>
-      <a href="">Room type 2</a>
-      <a href="">Room type 3</a>
-      <a href="">Room type 4</a>
-      <a href="">Room type 5</a>
+        <div class="booking-form-container">
+
+          <form class="booking-form" action="#" method="post">
+  
+            <div class="elem-group">
+  
+                <label for="name">Your Name</label>
+  
+                <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern="[A-Z\s-a-z]{3,20}" required>
+  
+            </div>
+  
+            <div class="elem-group">
+  
+                <label for="email">Your E-mail</label>
+  
+                <input type="email" id="email" name="visitor_email" placeholder=john.doe@email.com required>
+  
+            </div>
+  
+            <div class="elem-group">
+  
+                <label for="phone">Your Phone</label>
+  
+                <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" required>
+  
+            </div>
+  
+            <hr>
+  
+            <div class="elem-group inlined">
+  
+                <label for="adult">Adults</label>
+  
+                <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  
+            </div>
+  
+            <div class="elem-group inlined">
+  
+                <label for="child">Children</label>
+  
+                <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  
+            </div>
+  
+            <div class="elem-group inlined">
+  
+                <label for="checkin-date">Check-in Date</label>
+  
+                <input type="date" id="checkin-date" name="checkin" required>
+  
+            </div>
+  
+            <div class="elem-group inlined">
+  
+                <label for="checkout-date">Check-out Date</label>
+  
+                <input type="date" id="checkout-date" name="checkout" required>
+  
+            </div>
+  
+            <div class="elem-group">
+  
+                <label for="room-selection">Select Room Preference</label>
+  
+                <select id="room-selection" name="room_preference" required>
+  
+                    <option value="">Choose a Room from the List</option>
+  
+                    <option value="connecting">Connecting</option>
+  
+                    <option value="adjoining">Adjoining</option>
+  
+                    <option value="adjacent">Adjacent</option>
+  
+                </select>
+  
+            </div>
+  
+            <hr>
+  
+            <div class="elem-group">
+  
+                <label for="message">Anything Else?</label>
+  
+                <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  
+            </div>
+  
+            <button type="submit">Book The Rooms</button>
+  
+        </form>
+  
+       </div>
      </div>
   </div>
   </nav>
@@ -252,14 +342,14 @@
           <h5>Subscribe</h5>
           <ul>
             <li><a href="">The Hotel</a></li>
-            <li><a href="">The Performance Lounge</a></li>
+            <li><a href="/performancepage.html">The Performance Lounge</a></li>
+            <li><a href="/html.html">The Spa</a></li>
           </ul>
         </div>
 
         <div class="footer-content">
           <h5>Company</h5>
           <ul>
-            <li><a href="">About</a></li>
             <li><a href="#history">History</a></li>
           </ul>
         </div>
