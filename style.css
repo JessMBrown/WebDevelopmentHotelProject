@@ -4,24 +4,21 @@ h1, h2{
   color: #000000;
   width: 800px;
   float: left;
-  text-align: justify;
-  font-family: "Raleway", sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
-
 h3 {
   position: center;
   color: #000000;
-
-  font-family: "Raleway", sans-serif;
+  font-family: "Libre Baskerville", sans-serif;
  
 }
-
 * {
   box-sizing: border-box;
 }
+
 /* Welcome to text */
 .main-content {
   text-align: center;
@@ -244,6 +241,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
 /* Services cards */
 .background {
   display: grid;
@@ -382,31 +380,26 @@ button {
   padding: 2px 16px;
   color: white;
 }
-
 .demo {
   opacity: 0.6;
 }
-
 .active,
 .demo:hover {
   opacity: 1;
 }
-
 img.hover-shadow {
   transition: 0.3s;
 }
-
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 /* footer */
 .footer ul {
   list-style: none;
+  text-decoration: none;
   padding: 0;
   margin: 0;
 }
-
 .footer .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -423,32 +416,26 @@ img.hover-shadow {
   text-align: center;
   text-decoration: none;
 }
-
 .fa:hover {
   opacity: 0.7;
 }
-
 .fa-facebook {
   background: #3b5998;
   color: white;
 }
-
 .fa-twitter {
   background: #55acee;
   color: white;
 }
-
 .fa-instagram {
   background: #125688;
   color: white;
 }
-
 .fa-snapchat-ghost {
   background: #fffc00;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 .band-desc-text {
   position: relative;
   color: #000000;
@@ -529,17 +516,14 @@ img.hover-shadow {
   padding: 70px;
   background-image: linear-gradient(#f1faee, #a8dadc);
 }
-
 .contact-desc-img {
   max-width: 100%;
   max-height: 100%;
   float: left;
 }
-
 .spacer {
   height: 100vh;
 }
-
 .has-transition_text-reveal {
   .text-reveal_wrapper {
     position: relative;
@@ -553,7 +537,6 @@ img.hover-shadow {
     }
   }
 }
-
 .myBtn {
   display: none;
   position: fixed;
@@ -570,15 +553,12 @@ img.hover-shadow {
   border-radius: 10px;
   font-size: 20px;
 }
-
 .myBtn:hover {
   background-color: #e63946;
 }
-
 #map {
   height: 100%;
 }
-
 .map-desc-text {
   position: relative;
   color: #000000;
@@ -592,12 +572,10 @@ img.hover-shadow {
   font-weight: 600;
   font-style: normal;
 }
-
 .map-desc-img {
   max-width: 100%;
   height: auto;
 }
-
 .map-container {
   z-index: 1;
   display: block;
@@ -605,8 +583,6 @@ img.hover-shadow {
   margin-right: auto;
   width: 50%;
 }
-
-
 /* 
  * Optional: Makes the sample page fill the window. 
  */
@@ -615,52 +591,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-/* 
-$("#main_bg").append("<div id=\"optimizely_604049823\">...</div>");
-$("#optimizely_604049823").replaceWith("<div id=\"optimizely_604049823\"><!-- TrustBox widget -->\n<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"53da56ff0000640005792dae\" data-style-height=\"130px\" data-style-width=\"100%\" data-theme=\"light\" data-stars=\"4,5\">\n  <a href=\"https://www.trustpilot.com/review/bluevine.com\" target=\"_blank\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget --></div>");
-$(".trustpilot-widget > a").css({"display":"none", "visibility":""});
-$(".trustpilot-widget").replaceWith("<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"53da56ff0000640005792dae\" data-style-height=\"130px\" data-style-width=\"100%\" data-theme=\"light\" data-stars=\"4,5\" style=\"position: relative;\">\n  <a href=\"https://www.trustpilot.com/review/bluevine.com\" target=\"_blank\" style=\"display: none;\">Trustpilot</a>\n<iframe frameborder=\"0\" scrolling=\"no\" src=\"https://widget.trustpilot.com/trustboxes/53aa8912dec7e10d38f59f36/index.html?locale=en-US&amp;templateId=53aa8912dec7e10d38f59f36&amp;businessunitId=53da56ff0000640005792dae&amp;styleHeight=130px&amp;styleWidth=100%25&amp;theme=light&amp;stars=4%2C5\" style=\"position: relative; height: 130px; width: 100%; border-style: none; display: block; overflow: hidden;\"></iframe></div>");
-$(".trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
-$(".trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
-$(".trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
-$(".trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
-$("#optimizely_604049823").css({"background-color":"#ffffff"});
-$(".trustpilot-widget > iframe:eq(1)").removeAttr("src").removeAttr("srcdoc");
-$(".trustpilot-widget > iframe:eq(1)").css({"display":"none", "visibility":""});
-$("#optimizely_604049823").css({"border-spacing":"49px 90px"});
-$("#optimizely_604049823").css({"border-spacing":"", "height":"130px", "margin":"0px", "padding":"90px", "clear":"both", "position":"relative", "float":"none"});
-$("#optimizely_604049823").css({"display":"none", "visibility":""});
-$("#wrap").append("<div id=\"optimizely_764986252\">...</div>");
-$("#optimizely_764986252").replaceWith("<div id=\"optimizely_764986252\"><!-- TrustBox widget -->\n<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"53da56ff0000640005792dae\" data-style-height=\"130px\" data-style-width=\"100%\" data-theme=\"light\" data-stars=\"4,5\">\n  <a href=\"https://www.trustpilot.com/review/bluevine.com\" target=\"_blank\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget --></div>");
-$("#optimizely_764986252 a").css({"display":"none", "visibility":""});
-$("#optimizely_764986252 > .trustpilot-widget").css({"background-color":"#ffffff"});
-$("#optimizely_764986252 > .trustpilot-widget").css({"padding":"0px", "margin":"50px", "height":"131px"});
-$("#optimizely_764986252 iframe").css({"z-index":3172000});
-$("#optimizely_764986252 > .trustpilot-widget").css({"display":"none", "visibility":""});
-$("#main_bg").append("<div id=\"optimizely_282050013\">...</div>");
-$("#optimizely_282050013").replaceWith("<div id=\"optimizely_282050013\"><!-- TrustBox widget -->\n<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"53aa8912dec7e10d38f59f36\" data-businessunit-id=\"53da56ff0000640005792dae\" data-style-height=\"130px\" data-style-width=\"100%\" data-theme=\"light\" data-stars=\"4,5\">\n  <a href=\"https://www.trustpilot.com/review/bluevine.com\" target=\"_blank\">Trustpilot</a>\n</div>\n<!-- End TrustBox widget --></div>");
-$("#optimizely_282050013").css({"background-color":"#ffffff", "margin":"50px", "height":"130px"});
-$("#optimizely_282050013 a").css({"display":"none", "visibility":""});
-$("#optimizely_282050013 > .trustpilot-widget").css({"width":"100%"});
-$("#optimizely_282050013 > .trustpilot-widget").css({"width":"100%", "margin":"50px", "text-align":"", "position":""});
-$("#optimizely_282050013 > .trustpilot-widget").css({"margin":"0px"});
-$("#optimizely_282050013").css({"width":"100%", "margin":"0px", "padding":"50px", "height":"230px", "position":"", "float":""});
-$("#optimizely_282050013").css({"height":"15em", "width":"100%", "padding":"3em"});
-$("#optimizely_282050013").css({"padding":"28px", "width":"100%", "height":"183px"});
-$(".row").css({"margin":"", "padding":"", "height":"800px"});
-$("#main_bg > .container").css({"height":"800px"});
-$(".col").css({"height":"700px"});
-$(".row").css({"height":"755px"});
-$("#main_bg > .container").css({"height":"775px"}); */
-
-
-
-html{
   scroll-behavior: smooth;
 }
-
 section{
   position: relative;
   display: flex;
@@ -669,7 +601,6 @@ section{
   padding: 10px 10px;
   color: black;
 }
-
 .main-content-container{
   position: relative;
   display: flex;
@@ -677,14 +608,11 @@ section{
   align-items: center;
   flex-direction: column;
 }
-
 .main-title-from-the-left .main-title-from-the-right{
   font-size: 4em;
   margin-bottom: 10px;
   font-family: "Raleway", sans-serif;
 }
-
-
 .main-content{
   position: relative;
   width: auto;
@@ -692,7 +620,6 @@ section{
   justify-content: center;
   align-items: center;
 }
-
 .main-content .main-content-text-box{
   z-index: 222;
   background: rgba(255, 255, 255, 0.1);
@@ -705,7 +632,6 @@ section{
   font-family: "Raleway", sans-serif;
 
 }
-
 .main-content-text-box{
   position: relative;
   color: #000000;
@@ -719,18 +645,8 @@ section{
   font-weight: 600;
   font-style: normal;
 }
-/* .main-content .main-content-text-box h3{
-  font-size: 2em;
-  margin-bottom: 10px;
-} */
-/* 
-.section-title{
-  font-size: 3em;
-  margin-bottom: 80px;
-} */
 
 /* scroll to top button settings */
-
 #myBtn {
   display: none; 
   position: fixed; 
@@ -747,9 +663,245 @@ section{
   border-radius: 10px; 
   font-size: 20px; 
 }
-
 #myBtn:hover {
   background-color: #E63946;
 }
 
 /* scroll to top button settings end */
+
+/* spa hero text settings */
+
+.spa-hero {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/spa hero.jpg");
+  color: white;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.spa-hero-text {
+  text-align: center;
+  font-size: 200px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.spa-hero-text h1{
+  color: white;
+  text-align: center;
+}
+
+ /* spa treatment title settings - expo lounge font link - https://www.cdnfonts.com/halimun.font - maybe use as accent? */
+
+ .spa-treatment-intro {
+  text-align: center;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.spa-intro-text {
+font-family: "Raleway", sans-serif;
+font-optical-sizing: auto;
+font-weight:500;
+font-style: normal;
+text-transform: uppercase;
+}
+
+/* spa treatments card settings and hover effect settings */  
+
+.treatment-container-one {
+  display: flex;
+  margin: 25px 80px 75px 80px;
+}
+
+.treatment-container-two {
+  display: flex;
+  margin: 25px 80px 75px 80px;
+}
+.col {
+    transition: 0.5s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear;
+} 
+
+.col {
+  container: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.col:hover {
+  transform: translateY(-0.8%);
+  box-shadow: 0 4rem 8rem rgba(248, 247, 247, 0.5);
+}
+
+/* treatment 'what's included section' */ 
+.treatment-steps-container {
+  text-align: center;
+}
+
+.treatment-steps {
+  display: inline-block;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* card footer area background color */ 
+.treatment-card-footer {
+  background-color: #457B9D!important;
+}
+
+/*  book treatment button settings */ 
+.book-treatment {
+  border: 2px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*  book now button color changes when hovered */ 
+button:hover {
+  background-color: #E63946;
+  color: white;
+}
+
+.treatment-card-title {
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+/*  testimonials section settings */ 
+
+.testimony {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2px;
+
+}
+.testimonial-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.header-testimonial {
+  margin-bottom: 32px;
+}
+
+.testimonials-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.card-testimonial {
+  padding: 32px;
+  display: grid;
+  gap: 16px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card-testimonial i {
+  font-size: 40px;
+  color: gold;
+}
+
+.card-testimonial p {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+.card-testimonial img {
+  width: 100px;
+  height:100px;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.card-testimonial name {
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.card-testimonial star-rating{
+  display: flex;
+  align-content: center; 
+}
+
+.checked {
+  color: #F5A41A;
+}
+
+@media (width < 900px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (width < 600px) {
+  testimonials-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* spa section room booking banner */ 
+
+.banner-tess {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("Images/spa hero.jpg");
+    height: 50%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: relative;
+    cursor: pointer;
+}
+/* text over banner settings */
+
+.banner-text-tess {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+ }
+
+ .banner-text-tess h1{
+  color: white;
+ }
+  
+ .room-booking {
+  border: 4px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+ }

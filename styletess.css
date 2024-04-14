@@ -244,7 +244,7 @@ button {
 }
 /* spa hero text settings */
 
-.hero {
+.spa-hero {
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/spa hero.jpg");
     color: white;
     padding-top: 250px;
@@ -255,7 +255,7 @@ button {
     position: relative;
 }
 
-.hero-text {
+.spa-hero-text {
     text-align: center;
     font-size: 200px;
     font-weight: bold;
@@ -268,14 +268,14 @@ button {
 
   /* spa treatment title settings - expo lounge font link - https://www.cdnfonts.com/halimun.font - maybe use as accent? */
 
-  .treatment-intro {
+  .spa-treatment-intro {
     text-align: center;
     color: black;
     padding-top: 20px;
     padding-bottom: 20px;
  }
 
- .intro-text {
+ .spa-intro-text {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight:500;
@@ -285,12 +285,12 @@ button {
 
 /* spa treatments card settings and hover effect settings */  
 
-.container-one {
+.treatment-container-one {
   display: flex;
   margin: 25px 80px 75px 80px;
 }
 
-.container-two {
+.treatment-container-two {
   display: flex;
   margin: 25px 80px 75px 80px;
 }
@@ -312,11 +312,11 @@ button {
 }
 
 /* treatment 'what's included section' */ 
-.steps-container {
+.treatment-steps-container {
   text-align: center;
 }
 
-.steps {
+.treatment-steps {
   display: inline-block;
   text-align: left;
   font-family: "Raleway", sans-serif;
@@ -326,7 +326,7 @@ button {
 }
 
 /* card footer area background color */ 
-.card-footer {
+.treatment-card-footer {
   background-color: #457B9D!important;
 }
 
@@ -346,7 +346,7 @@ button:hover {
   color: white;
 }
 
-.card-title {
+.treatment-card-title {
   font-size: 18px;
   font-weight: bold;
 
@@ -501,6 +501,7 @@ button:hover {
 /* footer */
 .footer ul {
   list-style: none;
+  text-decoration: none;
   padding: 0;
   margin: 0;
 }
@@ -546,6 +547,3 @@ button:hover {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
-
-
